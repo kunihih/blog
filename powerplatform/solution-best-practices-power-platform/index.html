@@ -4,20 +4,20 @@
   <meta charset="utf-8">
   
   
-  <title>Dynamics 365 Customer Engagement のクラウド サポートをご利用いただく際の留意点 | Japan Dynamics CRM &amp; Power Platform Support Blog</title>
+  <title>Power Platform ソリューション運用のベストプラクティス | Japan Dynamics CRM &amp; Power Platform Support Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、Power Platform サポートチームです。 いつも Dynamics 365 をご利用いただきありがとうございます。本記事では、Dynamics 365 をご利用されている皆様へクラウド サポートをご利用いただく際の留意点をご案内いたします。ぜひお問い合わせの際にご確認をいただけますと幸いです。 目次 お問い合わせ番号について 原因究明に関する調査について 長期的な修正項目とし">
+  <meta name="description" content="はじめにこんにちは、Power Platform サポートチームの 早川 です。本記事では、Power Platform のソリューションを運用するうえで押さえておきたいベストプラクティスについてご案内いたします。 ソリューションは、アプリやフロー、テーブルなどのコンポーネントをまとめて管理・移行するための仕組みです。適切に設計・運用することで、変更管理や環境間の展開がスムーズになります。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Dynamics 365 Customer Engagement のクラウド サポートをご利用いただく際の留意点">
-<meta property="og:url" content="https://jpdynamicscrm.github.io/blog/powerplatform/Notes-when-using-support/index.html">
+<meta property="og:title" content="Power Platform ソリューション運用のベストプラクティス">
+<meta property="og:url" content="https://jpdynamicscrm.github.io/blog/powerplatform/solution-best-practices-power-platform/index.html">
 <meta property="og:site_name" content="Japan Dynamics CRM &amp; Power Platform Support Blog">
-<meta property="og:description" content="こんにちは、Power Platform サポートチームです。 いつも Dynamics 365 をご利用いただきありがとうございます。本記事では、Dynamics 365 をご利用されている皆様へクラウド サポートをご利用いただく際の留意点をご案内いたします。ぜひお問い合わせの際にご確認をいただけますと幸いです。 目次 お問い合わせ番号について 原因究明に関する調査について 長期的な修正項目とし">
+<meta property="og:description" content="はじめにこんにちは、Power Platform サポートチームの 早川 です。本記事では、Power Platform のソリューションを運用するうえで押さえておきたいベストプラクティスについてご案内いたします。 ソリューションは、アプリやフロー、テーブルなどのコンポーネントをまとめて管理・移行するための仕組みです。適切に設計・運用することで、変更管理や環境間の展開がスムーズになります。">
 <meta property="og:locale" content="ja_JP">
-<meta property="article:published_time" content="2022-11-28T00:00:00.000Z">
-<meta property="article:modified_time" content="2026-02-25T04:42:08.584Z">
+<meta property="article:published_time" content="2026-02-10T03:00:00.000Z">
+<meta property="article:modified_time" content="2026-02-25T04:42:08.656Z">
 <meta property="article:author" content="Japan Dynamics CRM &amp; Power Platform Support Team">
-<meta property="article:tag" content="お問い合わせ全般">
-<meta property="article:tag" content="Dynamics">
+<meta property="article:tag" content="Dataverse">
+<meta property="article:tag" content="PowerPlatform">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="../../atom.xml" title="Japan Dynamics CRM &amp; Power Platform Support Blog" type="application/atom+xml">
@@ -81,7 +81,7 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-powerplatform/Notes-when-using-support" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-powerplatform/solution-best-practices-power-platform" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -90,7 +90,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Dynamics 365 Customer Engagement のクラウド サポートをご利用いただく際の留意点
+      Power Platform ソリューション運用のベストプラクティス
     </h1>
   
 
@@ -98,14 +98,14 @@
       <div class="article-share">
         Published: 
         <a href="" class="article-date-single">
-  <time datetime="2022-11-28T00:00:00.000Z" itemprop="datePublished">2022-11-28</time>
+  <time datetime="2026-02-10T03:00:00.000Z" itemprop="datePublished">2026-02-10</time>
 </a>
         
           / Last update: <a id="update-time" class="article-date-single"></a>
 / Contributors: <ul style="display: inline-block; list-style:none" id="contributors" class="github-contributors"> </ul>
 
 <script type="text/javascript">
-  const sourceUrl = "https://github.com/jpdynamicscrm/blog/blob/master/articles/powerplatform/Notes-when-using-support.md";
+  const sourceUrl = "https://github.com/jpdynamicscrm/blog/blob/master/articles/powerplatform/solution-best-practices-power-platform.md";
   const urlParts = sourceUrl.split("/");
   const user = urlParts[3];
   const repo = urlParts[4];
@@ -152,68 +152,116 @@
 </script>
         
         
-  <div class="article-category">
-    <a class="article-category-link" href="../../categories/Dynamics-365/">Dynamics 365</a>►<a class="article-category-link" href="../../categories/%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE%E3%81%94%E5%88%A9%E7%94%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/">サポートサービスのご利用について</a>
-  </div>
-
         
-        <a href="https://github.com/jpdynamicscrm/blog/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+d1e9be13-61e7-553b-bfe4-3479f4c2ff27%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BDynamics+365+Customer+Engagement+%E3%81%AE%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89+%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%82%92%E3%81%94%E5%88%A9%E7%94%A8%E3%81%84%E3%81%9F%E3%81%A0%E3%81%8F%E9%9A%9B%E3%81%AE%E7%95%99%E6%84%8F%E7%82%B9%5D%28https%3A%2F%2Fjpdynamicscrm.github.io%2Fblog%2Fpowerplatform%2FNotes-when-using-support%2F%29%0A*+Content+Source%3A+%5Barticles%2Fpowerplatform%2FNotes-when-using-support.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicscrm%2Fblog%2Fblob%2Fmaster%2Farticles%2Fpowerplatform%2FNotes-when-using-support.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
+        <a href="https://github.com/jpdynamicscrm/blog/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+e5f8fc42-e166-575d-b36b-8585e155491a%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BPower+Platform+%E3%82%BD%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%81%8B%E7%94%A8%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%82%B9%5D%28https%3A%2F%2Fjpdynamicscrm.github.io%2Fblog%2Fpowerplatform%2Fsolution-best-practices-power-platform%2F%29%0A*+Content+Source%3A+%5Barticles%2Fpowerplatform%2Fsolution-best-practices-power-platform.md%5D%28https%3A%2F%2Fgithub.com%2Fjpdynamicscrm%2Fblog%2Fblob%2Fmaster%2Farticles%2Fpowerplatform%2Fsolution-best-practices-power-platform.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpdynamicscrm.github.io/blog/powerplatform/Notes-when-using-support/" data-id="cmm1jskr5004n0npc5i8n2ukj" class="article-share-link">共有</a>
+        <a data-url="https://jpdynamicscrm.github.io/blog/powerplatform/solution-best-practices-power-platform/" data-id="cmm1jskrt006g0npc1jgddcxx" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>こんにちは、Power Platform サポートチームです。</p>
-<p>いつも Dynamics 365 をご利用いただきありがとうございます。<br>本記事では、Dynamics 365 をご利用されている皆様へクラウド サポートをご利用いただく際の留意点をご案内いたします。<br>ぜひお問い合わせの際にご確認をいただけますと幸いです。</p>
-<h2 id="目次"><a href="#目次" class="headerlink" title="目次"></a>目次</h2><ol>
-<li><a href="#inquiry-number">お問い合わせ番号について</a></li>
-<li><a href="#investigation">原因究明に関する調査について</a></li>
-<li><a href="#long-term-fix">長期的な修正項目として検討される事象について</a></li>
-<li><a href="#one-question">一問一答にてお問い合わせを承ります</a></li>
-<li><a href="#customization">カスタマイズに関するご相談について</a></li>
-<li><a href="#no-contact">お客様からご連絡をいただけない場合や、長期間お待ちする場合について</a></li>
-<li><a href="#data-protection">お客様データの保護について</a></li>
-<li><a href="#reference">参考</a></li>
+        <h2 id="はじめに"><a href="#はじめに" class="headerlink" title="はじめに"></a>はじめに</h2><p>こんにちは、Power Platform サポートチームの 早川 です。<br>本記事では、Power Platform のソリューションを運用するうえで押さえておきたいベストプラクティスについてご案内いたします。</p>
+<p>ソリューションは、アプリやフロー、テーブルなどのコンポーネントをまとめて管理・移行するための仕組みです。<br>適切に設計・運用することで、変更管理や環境間の展開がスムーズになります。</p>
+<span id="more"></span>
+
+<div class="alert is-info"><p class="alert-title">Note</p><p>本記事は執筆時点の情報に基づいています。製品の仕様は予告なく変更される場合がありますので、最新の情報は公式ドキュメントをご確認ください。</p></div>
+<h2 id="ソリューションとは"><a href="#ソリューションとは" class="headerlink" title="ソリューションとは"></a>ソリューションとは</h2><p>Power Platform のソリューションとは、Power Apps のアプリや Power Automate のフロー、Dataverse のテーブルなどのコンポーネントをひとまとめにして管理するための「入れ物」です。</p>
+<p>Power Apps や Power Automate で作成したコンポーネントは、既定では「既定のソリューション（Default Solution）」に含まれます。<br>しかし、本番運用を見据える場合はカスタムソリューションを作成し、関連するコンポーネントをまとめて管理することが推奨されます。</p>
+<p>ソリューションを利用するメリットは主に以下のとおりです。</p>
+<ul>
+<li>開発環境から本番環境へコンポーネントをまとめて移行できる</li>
+<li>変更履歴やバージョンの管理がしやすくなる</li>
+<li>コンポーネント間の依存関係を把握しやすくなる</li>
+<li>不要になった機能をまとめて削除（アンインストール）できる</li>
+</ul>
+<div class="alert is-important"><p class="alert-title">重要</p><p>小規模な開発であっても、カスタムソリューションを使うことで変更管理やバックアップが容易になります。既定のソリューションのみでの運用は推奨されません。</p></div>
+<h2 id="マネージドソリューションとアンマネージドソリューション"><a href="#マネージドソリューションとアンマネージドソリューション" class="headerlink" title="マネージドソリューションとアンマネージドソリューション"></a>マネージドソリューションとアンマネージドソリューション</h2><p>ソリューションには「マネージドソリューション」と「アンマネージドソリューション」の 2 種類があります。<br>それぞれの特徴は以下のとおりです。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>アンマネージドソリューション</th>
+<th>マネージドソリューション</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主な用途</td>
+<td>開発環境での編集・作業用</td>
+<td>テスト環境・本番環境への展開用</td>
+</tr>
+<tr>
+<td>コンポーネントの編集</td>
+<td>可能</td>
+<td>不可（意図しない変更を防止）</td>
+</tr>
+<tr>
+<td>アンインストール</td>
+<td>コンポーネントは環境に残る</td>
+<td>コンポーネントごと削除される</td>
+</tr>
+</tbody></table>
+<p>基本的な運用として、以下のフローが推奨されます。</p>
+<ol>
+<li>開発環境でアンマネージドソリューションとしてコンポーネントを編集する</li>
+<li>マネージドソリューションとしてエクスポートする</li>
+<li>テスト環境や本番環境にマネージドソリューションとしてインポートする</li>
 </ol>
-<p><a id='inquiry-number'></a></p>
-<h2 id="お問い合わせ番号について"><a href="#お問い合わせ番号について" class="headerlink" title="お問い合わせ番号について"></a>お問い合わせ番号について</h2><p>クラウド サポートでは、お問い合わせ受付の際にお問い合わせ番号を発行させていただきます。お問い合わせの内容が複数の異なる技術的観点からの調査が必要な場合には、お問い合わせの管理上 <a target="_blank" rel="noopener" href="https://admin.powerplatform.microsoft.com/">Power Platform 管理センター</a> より新しいお問い合わせの起票をお願いいたします。<br>2021 年 10 月 27 日以降、個人情報保護の強化のため、基本的に弊社サポート担当者でのサポート リクエストの起票については行っておりません。あらかじめご理解の上、ご協力くださいますようお願い申し上げます。</p>
-<p><a id='investigation'></a></p>
-<h2 id="原因究明に関する調査について"><a href="#原因究明に関する調査について" class="headerlink" title="原因究明に関する調査について"></a>原因究明に関する調査について</h2><p>Dynamics 365 では、マイクロソフトがサービスの提供に影響を与えると認識したサービス インシデントのうち、大規模なものはインシデントの事後レポート (PIR)、それ以外のものは Microsoft 365 管理センターの <a target="_blank" rel="noopener" href="https://admin.microsoft.com/Adminportal/Home#/servicehealth">サービス正常性ダッシュボード</a> にて根本原因に関する情報を提供しております。インシデントの事後レポート (PIR) に関しましてはサービス正常性ダッシュボードから英語版をダウンロードすることが可能です。<br>また、お問い合わせいただいた問題を再現することができない場合、原因調査・原因究明が難しい場合がございます。ご理解のほどお願い申し上げます。</p>
-<p>なお、お客様の事象の調査に際し、弊社側のログの調査が必要な場合がございますが、ログの保管期間は<strong>最大 30 日間</strong>となっており、ログの種類によっては 14 日程度のものや、プラグイン トレースなど保管期間が 24 時間のログもございますため、ログの保管期限を過ぎた事象の原因調査は困難となる可能性がございますことをご理解いただけますと幸いです。</p>
-<p>また、クラウド サポートでは、調査にあたりお客様のログを確認させていただく場合や、調査用の環境（<a href="https://jpdynamicscrm.github.io/blog/powerplatform/for-early-resolution-of-issues/#%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88-%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">サポート インスタンス</a>）の作成を依頼させていただく場合がございます。<br>原則サポート リクエスト起票時においては、お問い合わせの事象が発生しているテナントのご契約者様にてサポート リクエストを起票いただくようお願いいたします。</p>
-<p><a id='long-term-fix'></a></p>
-<h2 id="長期的な修正項目として検討される事象について"><a href="#長期的な修正項目として検討される事象について" class="headerlink" title="長期的な修正項目として検討される事象について"></a>長期的な修正項目として検討される事象について</h2><p>お問い合わせいただいた問題の中には、影響範囲などさまざまな観点から開発部門で判断した結果、中長期的な課題として検討する場合があります。そのような中長期的な視点で調査を行う問題について、回避策が存在する場合には一旦サポート リクエストでの対応の終了をご相談させていただく場合がございます。</p>
-<p>また、不具合などに関しては、今後の対応方針についてご案内いたしますが、サポート窓口から弊社内での進捗状況に関するご報告や、修正が完了した場合の通知は行っておりません。そのため、原則として、一度サポート リクエストを対応終了とさせていただいております。</p>
-<p>対応終了後でも、新たなご懸念点がある場合や、調査の進捗を確認する必要がある場合には、元のお問い合わせ番号を添えて新規にお問い合わせをご起票いただけましたら対応を再開いたしますのでご安心ください。なお、調査の進捗確認において、お問い合わせ時点で調査が継続中の場合にはその旨のご報告をもってサポート リクエストの回答とさせていただきますことをご了承ください。</p>
-<p><a id='one-question'></a></p>
-<h2 id="一問一答にてお問い合わせを承ります"><a href="#一問一答にてお問い合わせを承ります" class="headerlink" title="一問一答にてお問い合わせを承ります"></a>一問一答にてお問い合わせを承ります</h2><p>1 件あたりを “問題の最小単位” とさせていただく必要があるため、複雑な問題については、切り分けによって複数のお問い合わせに分割していただくようお願いする場合や、追加のご質問には新規起票をお願いする場合があります。</p>
-<p>このような対応は、お客様により良いサポート体験をご提供するためのものでございます。何卒ご理解賜りますようお願い申し上げます。</p>
-<p><a id='customization'></a></p>
-<h2 id="カスタマイズに関するご相談について"><a href="#カスタマイズに関するご相談について" class="headerlink" title="カスタマイズに関するご相談について"></a>カスタマイズに関するご相談について</h2><p>当サポート窓口では、お客様のお問い合わせについて、主に標準的なご利用において発生するトラブル発生時や問題解決のための支援をご提供しています。一方で、お客様のご要望に応じたカスタマイズ、システム構築のためのコンサルティング、パフォーマンス チューニング、検証の請負などのご相談はプロアクティブ サポートの範囲となり、当サポートの対象外です。そのような場合は、弊社のプロアクティブ サービスをご案内させていただくことがございます。</p>
-<p><a id='no-contact'></a></p>
-<h2 id="お客様からご連絡をいただけない場合や、長期間お待ちする場合について"><a href="#お客様からご連絡をいただけない場合や、長期間お待ちする場合について" class="headerlink" title="お客様からご連絡をいただけない場合や、長期間お待ちする場合について"></a>お客様からご連絡をいただけない場合や、長期間お待ちする場合について</h2><p>以下のような場合、お問い合わせを一旦「対応終了」とさせていただくことがございます。</p>
-<ul>
-<li>当社からのご連絡に対し、複数回お客様からのご返信をいただけない場合</li>
-<li>お客様側での検討や、調査ログの採取・確認に時間を要する場合など、お客様側での対応を数週間お待ちする必要がある場合</li>
+<div class="alert is-warning"><p class="alert-title">警告</p><p>アンマネージドソリューションを本番環境に直接インポートすると、コンポーネントの削除やバージョン管理が困難になります。本番環境にはマネージドソリューションとして展開してください。</p></div>
+<h2 id="発行元（パブリッシャー）の設定"><a href="#発行元（パブリッシャー）の設定" class="headerlink" title="発行元（パブリッシャー）の設定"></a>発行元（パブリッシャー）の設定</h2><p>ソリューションの発行元（パブリッシャー）は、テーブルや列の論理名に付与されるプレフィックスを決定する重要な設定です。<br>以下のポイントに注意して設定してください。</p>
+<h3 id="組織で発行元を統一する"><a href="#組織で発行元を統一する" class="headerlink" title="組織で発行元を統一する"></a>組織で発行元を統一する</h3><p>発行元は組織ごとにひとつ作成し、すべてのソリューションで同じ発行元を使用することが推奨されます。<br>発行元が異なるとコンポーネントの依存関係が複雑になり、管理が難しくなります。</p>
+<h3 id="プレフィックスを適切に設定する"><a href="#プレフィックスを適切に設定する" class="headerlink" title="プレフィックスを適切に設定する"></a>プレフィックスを適切に設定する</h3><p>プレフィックスは組織を識別できる短い文字列（例: <code>contoso</code>）に設定します。<br>プレフィックスを <code>contoso</code> に設定した場合、新しく作成したテーブルの論理名は <code>contoso_テーブル名</code> のように自動的に付与されます。</p>
+<div class="alert is-important"><p class="alert-title">重要</p><p>一度設定したプレフィックスはあとから変更できません。最初に慎重に決定してください。</p></div>
+<h3 id="既定の発行元を使用しない"><a href="#既定の発行元を使用しない" class="headerlink" title="既定の発行元を使用しない"></a>既定の発行元を使用しない</h3><p>既定の発行元（プレフィックス: <code>new</code>）は使用しないでください。<br>他の組織が作成したコンポーネントと名前が競合する恐れがあります。</p>
+<h2 id="ソリューションの設計"><a href="#ソリューションの設計" class="headerlink" title="ソリューションの設計"></a>ソリューションの設計</h2><p>ソリューションを適切に設計することで、変更の影響範囲を限定でき、展開やテストが容易になります。</p>
+<h3 id="機能単位でソリューションを分割する"><a href="#機能単位でソリューションを分割する" class="headerlink" title="機能単位でソリューションを分割する"></a>機能単位でソリューションを分割する</h3><p>ひとつのソリューションにすべてのコンポーネントを詰め込むのではなく、機能や業務の単位で分割します。<br>たとえば「営業管理アプリ」と「経費申請フロー」がある場合、それぞれ別のソリューションとして管理します。</p>
+<p>コンポーネントが多すぎるソリューションは、エクスポートやインポートに時間がかかり、エラー発生時の原因特定も難しくなります。</p>
+<h3 id="共通コンポーネントはベースソリューションにまとめる"><a href="#共通コンポーネントはベースソリューションにまとめる" class="headerlink" title="共通コンポーネントはベースソリューションにまとめる"></a>共通コンポーネントはベースソリューションにまとめる</h3><p>複数のソリューションで共有するコンポーネント（テーブル、セキュリティロールなど）は、専用のベースソリューションにまとめます。<br>各機能ソリューションはベースソリューションに依存する形にすることで、整理された構成になります。</p>
+<h3 id="循環参照を避ける"><a href="#循環参照を避ける" class="headerlink" title="循環参照を避ける"></a>循環参照を避ける</h3><p>ソリューション間の依存関係は一方向に保ち、循環参照が発生しないように設計します。<br>循環参照が発生すると、インポートの順序管理が複雑になり、展開に失敗する場合があります。</p>
+<h2 id="環境間のソリューション移行"><a href="#環境間のソリューション移行" class="headerlink" title="環境間のソリューション移行"></a>環境間のソリューション移行</h2><p>ソリューションを環境間で移行する際は、以下のベストプラクティスに従ってください。</p>
+<h3 id="最低-3-つの環境を用意する"><a href="#最低-3-つの環境を用意する" class="headerlink" title="最低 3 つの環境を用意する"></a>最低 3 つの環境を用意する</h3><ul>
+<li><strong>開発環境</strong>: コンポーネントの編集・開発を行う環境</li>
+<li><strong>テスト環境</strong>: 動作確認・検証を行う環境</li>
+<li><strong>本番環境</strong>: 実際のユーザーが利用する環境</li>
 </ul>
-<p>対応終了後に追加のご質問が生じた場合や、調査ログの準備が整った際には、元のお問い合わせ番号を記載の上、新たにサポート リクエストを作成いただきますようお願いいたします。新たなサポート リクエストの担当エンジニアが、これまでのやり取りの経緯を確認のうえ、引き続き対応いたしますのでご安心ください。<br>お客様のご理解、ご協力のほど、よろしくお願い申し上げます。</p>
-<p><a id='data-protection'></a></p>
-<h2 id="お客様データの保護について"><a href="#お客様データの保護について" class="headerlink" title="お客様データの保護について"></a>お客様データの保護について</h2><p>お問い合わせの調査にあたり、ネットワーク トレースやログ ファイルなど、お客様の情報を含むデータのご提供をお願いする場合がございます。<br>お客様からご提供いただいたデータは、マイクロソフトの<strong>データ保護追加契約（DPA）</strong>に基づき、適切に保護されます。<br>DPA では、サポートサービス（プロフェッショナル サービス）を通じてご提供いただくデータについて、以下の保護が規定されています：</p>
+<p>テスト環境がないと、本番環境で初めて問題が発覚するリスクが高くなります。</p>
+<h3 id="接続参照と環境変数を活用する"><a href="#接続参照と環境変数を活用する" class="headerlink" title="接続参照と環境変数を活用する"></a>接続参照と環境変数を活用する</h3><p>接続参照は、フローやアプリが外部サービスに接続するための設定を環境ごとに分けるために使用します。<br>環境変数は、環境ごとに異なる値（URL、API キーなど）を管理するために使用します。</p>
+<p>これらを活用することで、ソリューション自体を変更することなく環境に応じた設定が可能になります。<br>「開発環境の接続情報が本番環境に持ち込まれる」という事故を防ぐことができます。</p>
+<h2 id="バージョン管理と-ALM"><a href="#バージョン管理と-ALM" class="headerlink" title="バージョン管理と ALM"></a>バージョン管理と ALM</h2><p>ソリューションのライフサイクルを適切に管理するために、バージョン管理と ALM（Application Lifecycle Management）の仕組みを取り入れることを推奨します。</p>
+<h3 id="バージョン番号の運用"><a href="#バージョン番号の運用" class="headerlink" title="バージョン番号の運用"></a>バージョン番号の運用</h3><p>ソリューションのバージョン番号は「メジャー.マイナー.ビルド.リビジョン」の 4 桁構成です。<br>以下のようなルールで運用すると管理がしやすくなります。</p>
 <ul>
-<li><strong>秘密保持義務</strong>: ボリューム ライセンス契約に基づくマイクロソフトの秘密保持義務が適用されます</li>
-<li><strong>開示の制限</strong>: お客様の指示、DPA の規定、または法令により求められる場合を除き、データを開示することはありません</li>
-<li><strong>セキュリティ対策</strong>: ISO 27001、ISO 27002、ISO 27018 などの国際標準規格に準拠したセキュリティ対策が講じられています</li>
+<li>初回リリース: <code>1.0.0.0</code></li>
+<li>軽微な修正: リビジョンを上げる（例: <code>1.0.0.1</code>）</li>
+<li>機能追加: マイナーバージョンを上げる（例: <code>1.1.0.0</code>）</li>
+<li>大規模な変更: メジャーバージョンを上げる（例: <code>2.0.0.0</code>）</li>
 </ul>
-<p>調査に必要なログやトレース ファイルに機密情報が含まれる場合でも、上記の保護のもとで取り扱われますので、安心してご提供ください。</p>
-<p><strong>参考資料：</strong></p>
+<h3 id="パイプラインによる展開の自動化"><a href="#パイプラインによる展開の自動化" class="headerlink" title="パイプラインによる展開の自動化"></a>パイプラインによる展開の自動化</h3><p>Power Platform のパイプライン機能を使うと、開発環境からテスト環境・本番環境への展開を効率的に行えます。</p>
+<ol>
+<li>Power Platform 管理センターでパイプラインを有効化します</li>
+<li>開発環境とターゲット環境（テスト・本番）を登録します</li>
+<li>ソリューションの <strong>[パイプラインで展開]</strong> を選択して展開を実行します</li>
+</ol>
+<h3 id="ソース管理との連携"><a href="#ソース管理との連携" class="headerlink" title="ソース管理との連携"></a>ソース管理との連携</h3><p>Azure DevOps や GitHub と連携することで、ソリューションの変更履歴をリポジトリで管理できます。<br>変更の追跡やコードレビューを行う本格的な ALM を実現したい場合に有効です。</p>
+<h2 id="まとめ"><a href="#まとめ" class="headerlink" title="まとめ"></a>まとめ</h2><p>本記事では、Power Platform のソリューション運用におけるベストプラクティスをご紹介しました。<br>主なポイントは以下のとおりです。</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA">Microsoft Products and Services Data Protection Addendum (DPA)</a></li>
+<li>ソリューションは小規模な開発でもカスタムソリューションを作成して管理する</li>
+<li>開発環境ではアンマネージド、本番環境にはマネージドソリューションとして展開する</li>
+<li>発行元は組織で統一し、既定の発行元（プレフィックス: <code>new</code>）は使用しない</li>
+<li>機能や業務単位でソリューションを分割し、循環参照を避ける</li>
+<li>開発・テスト・本番の 3 環境を用意し、接続参照と環境変数で設定を分離する</li>
+<li>バージョン番号を適切に管理し、パイプラインやソース管理を活用する</li>
 </ul>
-<p><a id='reference'></a></p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>以下の記事もあわせてご確認ください。</p>
-<ul>
-<li><a href="https://jpdynamicscrm.github.io/blog/powerplatform/for-early-resolution-of-issues/">サポートチームより問題の早期解決に向けたお客様へのお願い</a></li>
+<h2 id="参考情報"><a href="#参考情報" class="headerlink" title="参考情報"></a>参考情報</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/power-platform/alm/solution-concepts-alm">ソリューションの概要 - Microsoft Learn</a></li>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/power-platform/alm/overview-alm">Power Platform の ALM の概要 - Microsoft Learn</a></li>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions">マネージドソリューションとアンマネージドソリューション - Microsoft Learn</a></li>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/change-solution-publisher-prefix">ソリューション発行元のプレフィックス - Microsoft Learn</a></li>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/power-platform/alm/solution-layers-alm">ソリューションのレイヤー - Microsoft Learn</a></li>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/power-platform/alm/environment-strategy-alm">環境戦略 - Microsoft Learn</a></li>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/create-connection-reference">接続参照の概要 - Microsoft Learn</a></li>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/power-apps/maker/data-platform/environmentvariables">環境変数の概要 - Microsoft Learn</a></li>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/power-platform/alm/pipelines">Power Platform のパイプライン - Microsoft Learn</a></li>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/power-platform/alm/devops-build-tools">Power Platform 向け Azure DevOps ビルドツール - Microsoft Learn</a></li>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/power-platform/alm/devops-github-actions">Power Platform 向け GitHub Actions - Microsoft Learn</a></li>
 </ul>
 
       
@@ -228,10 +276,10 @@
     <footer class="article-footer">
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Dynamics/" rel="tag">Dynamics</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E5%85%A8%E8%88%AC/" rel="tag">お問い合わせ全般</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/Dataverse/" rel="tag">Dataverse</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../tags/PowerPlatform/" rel="tag">PowerPlatform</a></li></ul>
 
         
-        <a href="https://github.com/jpdynamicscrm/blog/edit/master/articles/powerplatform/Notes-when-using-support.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
+        <a href="https://github.com/jpdynamicscrm/blog/edit/master/articles/powerplatform/solution-best-practices-power-platform.md" class="article-github-edit-link" target="_blank" rel="noopener noreferrer">GitHub で編集</a>
         
     </footer>
   </div>
@@ -239,19 +287,10 @@
     
 <nav id="article-nav">
   
-    <a href="../Automatic-deletion-of-inactive-Microsoft-Dataverse-for-Teams-environments/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          非アクティブな Microsoft Dataverse for Teams 環境の自動削除について
-        
-      </div>
-    </a>
   
-  
-    <a href="../for-early-resolution-of-issues/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../dataverse-search-storage-guide/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">Dynamics 365 Customer Engagement サポートチームより問題の早期解決に向けたお客様へのお願い</div>
+      <div class="article-nav-title">Dataverse Search のストレージ内訳と削減の考え方（Q&amp;Aガイド）</div>
     </a>
   
 </nav>
@@ -270,7 +309,7 @@
       <ul>
         
           <li>
-            <a href="../solution-best-practices-power-platform/">Power Platform ソリューション運用のベストプラクティス</a>
+            <a href="">Power Platform ソリューション運用のベストプラクティス</a>
           </li>
         
           <li>
